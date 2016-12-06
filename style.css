@@ -1,12 +1,194 @@
 /*
-Theme Name:     Customizr Child
+Theme Name:     Customizr Child neo.works
 Theme URI:      http://themesandco.com/customizr
-Description:    A child theme for the Customizr WordPress theme. This child theme simply includes 2 files : style.css to add your custom css and functions.php where you can extend Customizr's core code. In order to keep your code as clean and flexible as possible, try to use Customizr's hooks API for your customizations. Do something awesome and have fun !
-Author:         Nicolas Guillaume (nikeo)
-Author URI:     http://themesandco.com
+Description:    The child theme for the Customizr for neo.works WordPress theme.
+Author:         Neo Chow (neoalienson)
+Author URI:     http://neo.works
 Template:       customizr
 Version:        1.0.0
 */
 
-/* Your awesome customizations start right here !
--------------------------------------------------------------- */
+.wp-caption {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 4px;
+  margin: 20px 10px 10px 20px;
+}
+
+.wp_syntax pre {
+  font-size: 16px !important;
+}
+
+.form-allowed-tags {
+  display: none;
+}
+
+.round-div {
+  left:0px;
+  top:0px;
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -webkit-mask-box-image: url(/wp-content/uploads/2013/06/ios72.png);
+  -webkit-mask-size:100%,100%;
+  background: #EEFFEE;
+  width:100%;
+  height:100%;
+}
+
+li.recentcomments {
+  text-align:left;
+}
+
+.thumb-wrapper {
+  height: 250px;
+  width: 269px;
+}
+
+.thumb-wrapper img {
+  height: 250px;
+  max-width: 269px;
+}
+
+@media (max-width: 320px) {
+  .span12.article-container .round-div{
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+  }
+
+  .span12.article-container .thumb-wrapper img {
+    top: 0px;
+    right: 0px;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .carousel-control {
+    top:20%;
+  }
+  
+  .carousel .item {
+    line-height:normal;
+    min-height:110px;
+  }
+
+  .span12.article-container .thumb-wrapper img, .span6.article-container .thumb-wrapper img, .span9.article-container .thumb-wrapper img {
+    max-width: 200px;
+    max-height: 180px;
+  }
+
+  .span12.article-container .round-div{
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+  }
+
+  .span12.article-container  .thumb-wrapper img {
+    top: 0px;
+    right: 0px;
+  }
+
+}
+
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .row-fluid .tc-content.span4, .row-fluid .tc-thumbnail.span4 {
+    width: 200px;
+  }
+
+  .row-fluid .tc-content.span8.span8 {
+    width: 55%;
+  }
+
+  .thumb-wrapper {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .thumb-wrapper img {
+    top: 0px;
+    left: 0px;
+  }
+
+  .span12.article-container .thumb-wrapper img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .carousel .item {
+    line-height:normal;
+    min-height:180px;
+  }
+
+  .span12.article-container .round-div{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+  }
+}
+
+@media (max-width: 979px) and (min-width:767px) {
+  .row-fluid .span4 {
+    width: 269px;
+  }
+
+  .row-fluid .span8 {
+    width: 60%;
+  }
+
+  .carousel .item {
+    line-height:normal;
+    min-height:240px;
+  }
+
+  .round-div{
+    top: 0px;
+    left: 0px;
+  }
+
+  .thumb-wrapper img {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width:979px) {
+  .carousel .item {
+    line-height:normal;
+    min-height:256px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel .item {
+    line-height:normal;
+    min-height:400px;
+  }
+}
+
+hr {
+  border: none;
+  height: 22px;
+  background: transparent url(/wp-content/uploads/2014/08/sech_soliton.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-bottom: 30px;
+}
+
+body {
+  background: #EEFFEE;
+}
+
+.tc-header {
+  background: #EEFFEE;
+}
+<!--[if IE gt 5]>-->
+
+.round-div {
+  background: none;
+}
